@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glance</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/slider.js" defer></script>
+    <script src="js/swiperCatalog.js" defer></script>
+    <script src="js/promptionSwiper.js" defer></script>
+    </head>
+<body>
+    <header class="header">
+        <div class="header-container container">
+            <div class="header__logo">
+                <a href=""><img src="./images/logo.svg" alt="Logo Glance"></a>
+            </div>
+            <div class="header__search-form">
+                <input type="text" placeholder="Поиск" class="search-input">
+            </div>
+            <ul class="header__ul">
+                <li class="header__li">
+                    <a href="#" class="header__li-item-link">
+                        <img src="/images/burger-menu.svg" alt="Burger-menu" class="header-img">
+                        <p class="header__li-text">Каталог</p>
+                    </a>
+                </li>
+                <li class="header__li">
+                    <a href="#" class="header__li-item-link">
+                        <img src="/images/icon-basket.svg" alt="basket" class="header-img">
+                        <p class="header__li-text">Корзина</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <hr class="header-hr">
+    </header>
+
+    <main class="main">
+        <div class="main-container container">
+
+            <div class="slider-container" >
+                <div class="slider"></div>
+                <button class="prev-button btn-swipe" aria-label="Посмотреть предыдущий слайд">&lt;</button>
+                <button class="next-button btn-swipe" aria-label="Посмотреть следующий слайд">&gt</button>
+            </div> 
+
+            <h1 class="section-name">Каталог</h1>
+
+            <div class="catalog__swiper-wrapper">
+                <div class="catalog-swiper">
+                </div>
+                <button class="swiper-btn prev-swipe" id="prev-swipe-id">&lt</button>
+                <button class="swiper-btn next-swipe" id="next-swipe-id">&gt</button>
+            </div>
+
+            <h1 class="section-name">Акции</h1>
+
+            <hr class="main-hr">
+
+            <div class="promotion">
+                <div class="promotion-wrapper">
+                        <div class="promotion-item__box">
+                            <div class="item-picture">
+                                    <div class="slider-photos__items">
+                                        <img src="/images/promotion/appleIPhone12-64.png" alt="" class="promotion-img promotion-img__block">
+                                        <img src="/images/promotion/appleIPhone14-128.png" alt="" class="promotion-img">
+                                        <img src="/images/promotion/huaweiNovaY61-128.png" alt="" class="promotion-img">
+                                    </div>
+                                <div class="percent-box">- 4 %</div>
+                            </div>
+                            <div class="dot-wrapper"></div>
+                            <h1 class="promotion-title">Смартфон Apple iPhone 14 128GB</h1>
+                            <div class="promotion-price">
+                                <h1 class="main-price">84 999 ₽</h1>
+                                <h3 class="discount-price">87 999 ₽</h3>
+                            </div>
+                            <div class="favorites-info">
+                                <p class="availability">В наличии</p>
+                                <button class="favorites-btn">
+                                    <img src="/images/favorites.png" alt="">
+                                </button>
+                            </div>
+                            <button class="promotion-btn">В корзину</button>
+                        </div>
+                    </div>
+                    <button class="swipe-btn__promotion prew-swipe-prom" id="prev-swipe-id">&lt</button>
+                    <button class="swipe-btn__promotion next-swipe-prom" id="next-swipe-id">&gt</button>
+                </div>
+        </div>
+    </main>
+
+</body>
+</html>
